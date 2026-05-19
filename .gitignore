@@ -1,0 +1,50 @@
+# API keys & secrets
+.env
+
+# Generated images & outputs
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.webp
+outputs/
+
+# Session logs (contain prompts + seeds, may be personal)
+*.log
+session.log
+
+# LoRA model weights
+*.safetensors
+*.ckpt
+*.pt
+
+# Personal notes & private files (content absorbed into docs/)
+old notes.md
+TODO.md
+inference_tweaks.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.user
