@@ -6,6 +6,23 @@ This toolkit uses **Flux + LoRA** — the best open-source approach for photorea
 
 ---
 
+## Example results
+
+Both images below were generated with this repo (Flux LoRA, `corporate` preset, no manual editing):
+
+<table>
+  <tr>
+    <td><img src="example-pics/image_1.jpg" width="300" alt="AI headshot — three-quarter view"/></td>
+    <td><img src="example-pics/image_2.jpg" width="300" alt="AI headshot — front-facing"/></td>
+  </tr>
+  <tr>
+    <td align="center"><em>corporate — three-quarter</em></td>
+    <td align="center"><em>corporate — front-facing</em></td>
+  </tr>
+</table>
+
+---
+
 ## Why this beats paid services
 
 | | Aragon AI / HeadshotPro | This repo |
@@ -165,6 +182,23 @@ flux-lora-headshots/
 | Generate 100 headshots | Replicate | ~$2.50–5 |
 
 Replicate charges per second of GPU time. Exact pricing at replicate.com/pricing.
+
+---
+
+## Refining results with FaceFusion
+
+AI-generated faces occasionally have subtle flaws — a slightly off eye, soft skin texture, or an unnatural expression. [FaceFusion](https://github.com/facefusion/facefusion) is the best open-source tool to fix these before you use the image.
+
+**What it does:** face restoration (GFPGAN / CodeFormer), face enhancement, and optionally face-swapping onto a better base photo.
+
+**Typical workflow:**
+
+1. Generate a batch of headshots with this repo
+2. Pick the best one
+3. Run it through FaceFusion's **face enhancer** (CodeFormer mode) to sharpen details and fix any artifacts
+4. Do a final touch-up in Photoshop / GIMP if needed (blemishes, background, lighting)
+
+FaceFusion runs locally with a GPU or on Google Colab for free. See their repo for install instructions.
 
 ---
 

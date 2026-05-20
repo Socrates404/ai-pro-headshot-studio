@@ -23,6 +23,7 @@ session.log
 # Personal notes & private files (content absorbed into docs/)
 old notes.md
 TODO.md
+TODO2.md
 inference_tweaks.md
 
 # Python
@@ -48,3 +49,4 @@ desktop.ini
 .idea/
 *.suo
 *.user
+
