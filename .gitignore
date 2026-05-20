@@ -11,6 +11,10 @@
 *.webp
 outputs/
 
+# Allow example images
+!example-pics/
+!example-pics/**
+
 # Session logs (contain prompts + seeds, may be personal)
 *.log
 session.log
